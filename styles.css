@@ -22,9 +22,10 @@ main{
   background-color: var(--Grey-800);
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 300px;
   margin: 40px auto;
   border-radius: 12px;
+  padding-bottom: 16px;
 }
 
 .hero{
@@ -34,7 +35,7 @@ main{
 
   & img{
     margin-top: 16px;
-    width: 160px;
+    width: 120px;
     border-radius: 50%;  
   }
 
@@ -48,4 +49,39 @@ main{
     font-size: 1.5em;
   }
 
+}
+
+.links-list{
+  width: 100%;
+  margin-top: 16px;
+  & ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    & li{
+      width: 100%;
+
+      & a{
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: var(--White);
+        background-color: var(--Grey-700);
+        padding: 16px 0;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      & a:active, a:hover{
+        background-color: var(--Green);
+        color: var(--Grey-900);
+      }
+    }
+  }
 }
