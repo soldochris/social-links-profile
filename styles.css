@@ -11,21 +11,31 @@
   --Grey-900: hsl(0, 0%, 8%);
 }
 
+
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: "Inter";
   font-size: 14px;
   background-color: var(--Grey-900);
   color: var(--White);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 main{
   background-color: var(--Grey-800);
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  margin: 40px auto;
+  width: 350px;
+  max-width: 350px;
   border-radius: 12px;
-  padding-bottom: 16px;
+  padding: 32px 0;
 }
 
 .hero{
@@ -34,9 +44,10 @@ main{
   align-items: center;
 
   & img{
-    margin-top: 16px;
     width: 120px;
-    border-radius: 50%;  
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: contain;  
   }
 
   & h1{
@@ -61,7 +72,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 
     & li{
       width: 100%;
